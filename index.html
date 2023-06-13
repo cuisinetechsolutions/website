@@ -24,6 +24,9 @@
       color: #ffffff;
       font-weight: bold;
     }
+    .navbar-toggler{
+      color: white;
+    }
 
     .nav-link {
       color: #ffffff;
@@ -63,8 +66,9 @@
 
     .service-card img {
       height: 200px;
-      object-fit: cover;
+      width: 70%;
     }
+
 
     .service-card .card-title {
       font-size: 24px;
@@ -72,6 +76,10 @@
       margin-top: 20px;
       margin-bottom: 10px;
     }
+     .card-img-top {
+    width: 100%;
+    height: auto;
+  }
 
     .service-card .card-text {
       font-size: 16px;
@@ -96,6 +104,7 @@
       align-items: center;
     }
 
+
     .about-text {
       max-width: 600px;
       text-align: center;
@@ -117,6 +126,12 @@
         padding: 0;
         font-size: 20px;
         line-height: 1;
+        background-color: #2c3e50;
+      }
+      .sc-img{
+        width: 100%;
+        height: 60%;
+        object-fit: cover;
       }
   </style>
   <!-- Google tag (gtag.js) -->
@@ -138,16 +153,16 @@
       
       
       <button id="languageButton" class="btn fixed-bottom fixed-left">
-        🇹🇷
+        🇬🇧
       </button>
 
 
 
   <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand" href="#">Cuisine Tech Solutions</a>
+      <a class="navbar-brand" href="#"> Cuisine Tech Solutions</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon" ></span>Ⲷ
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
@@ -155,24 +170,15 @@
             <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="#services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://wa.me/message/37NV7G5SOYW2H1">Contact <i class="fab fa-whatsapp"></i></a>
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="https://wa.me/message/37NV7G5SOYW2H1" target="_blank"><i class="fab fa-whatsapp"></i> Contact</a>
           </li>
         </ul>
-        <div class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Language: <span id="currentLanguage">ENG</span>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="languageDropdown">
-              <a class="dropdown-item" href="#" onclick="changeLanguage('TR')">TR</a>
-              <a class="dropdown-item" href="#" onclick="changeLanguage('ENG')">ENG</a>
-            </div>
-          </div>
   
       </div>
     </div>
@@ -181,7 +187,7 @@
   <section class="hero">
     <div class="container">
       <h1 id = "homeText">Welcome to Cuisine Tech Solutions</h1>
-      <p>We provide innovative solutions for your culinary business</p>
+      <p id = "homeTextP">We provide innovative solutions for your restaurant business, ensuring excellence at every step.</p>
       <a class="btn btn-primary" href="#services">Learn More</a>
     </div>
   </section>
@@ -191,7 +197,7 @@
     <div class="row">
       <div class="col-md-4">
         <div class="card mb-4">
-          <img src="path/to/service1.jpg" class="card-img-top" alt="Service 1">
+          <img src="service1.webp" class="card-img-top " alt="Service 1">
           <div class="card-body">
             <h5 class="card-title">Menu Creation</h5>
             <p class="card-text">We create customized menus for cafes, restaurants, and other food establishments, tailored to their specific needs and branding.</p>
@@ -200,56 +206,25 @@
       </div>
       <div class="col-md-4">
         <div class="card mb-4">
-          <img src="path/to/service2.jpg" class="card-img-top" alt="Service 2">
-          <div class="card-body">
-            <h5 class="card-title">Online Ordering</h5>
-            <p class="card-text">We develop seamless online ordering systems, allowing customers to conveniently place their orders through websites or mobile apps.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card mb-4">
-          <img src="path/to/service3.jpg" class="card-img-top" alt="Service 3">
+          <img src="service2.jpg" class="card-img-top sc-img" alt="Service 2">
           <div class="card-body">
             <h5 class="card-title">Menu Updates</h5>
             <p class="card-text">We offer ongoing menu update services, ensuring that your menus stay up-to-date with the latest offerings and prices.</p>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="container mt-5">
-    <h2 id="services">Our Services</h2>
-    <div class="row">
       <div class="col-md-4">
         <div class="card mb-4">
-          <img src="path/to/service1.jpg" class="card-img-top" alt="Service 1">
+          <img src="service3.jpg" class="card-img-top" alt="Service 3">
           <div class="card-body">
-            <h5 class="card-title">Menu Creation</h5>
-            <p class="card-text">We create customized menus for cafes, restaurants, and other food establishments, tailored to their specific needs and branding.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card mb-4">
-          <img src="path/to/service2.jpg" class="card-img-top" alt="Service 2">
-          <div class="card-body">
-            <h5 class="card-title">Online Ordering</h5>
-            <p class="card-text">We develop seamless online ordering systems, allowing customers to conveniently place their orders through websites or mobile apps.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card mb-4">
-          <img src="path/to/service3.jpg" class="card-img-top" alt="Service 3">
-          <div class="card-body">
-            <h5 class="card-title">Menu Updates</h5>
-            <p class="card-text">We offer ongoing menu update services, ensuring that your menus stay up-to-date with the latest offerings and prices.</p>
+            <h5 class="card-title">Menu Statistics</h5>
+            <p class="card-text">We provide menu statistic services to help you analyze the performance of your menus and make informed decisions.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
+  
   
   
 
@@ -262,25 +237,30 @@
       </div>
       <div class="row">
         <div class="col-md-6 about-content">
-          <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae lectus elit. Nullam convallis mauris ut maximus egestas. Fusce pulvinar odio sit amet quam scelerisque tempus. Nulla lacinia dui id metus feugiat, id hendrerit est volutpat. Quisque bibendum viverra metus, nec consequat orci tincidunt id.</p>
-          <p class="about-text">Ut sit amet justo ac urna facilisis sollicitudin. Mauris ac ante mauris. Morbi eu purus ut tortor cursus congue vel a elit. Ut pellentesque diam vitae tincidunt efficitur. Sed dignissim tempus mi id efficitur.</p>
+          <p class="about-text">Cuisine Tech Solutions is an innovative company that provides online menu creation services for cafes, cafeterias, restaurants, and similar establishments. Our aim is to help businesses create creative, impressive, and user-friendly menus and provide their customers with an unforgettable dining experience.</p>
+          <p class="about-text">We understand the importance of digitizing menus and merging them with modern technologies. That's why, at Cuisine Tech Solutions, we offer web-based menu creation solutions, utilizing the latest technological tools. Our user-friendly interface, which can be easily customized to fit your specific needs, allows you to create and edit menus with ease.</p>
+          <p class="about-text">Our vision is to empower our customers with innovative ways to manage and present their menus. By creating unique and original menus, we strive to help businesses express themselves uniquely and provide their customers with a memorable experience.</p>
+          <p class="about-text">At Cuisine Tech Solutions, customer satisfaction is our top priority. Our expert team works tirelessly to provide solutions tailored to the needs of your business. We provide guidance and support every step of the way, ensuring that you create menus exactly as you envision them.</p>
+          <p class="about-text">If you are a café, cafeteria, or restaurant owner, we are excited to work with you. Together, we can create a menu that grabs attention, tantalizes taste buds, and reflects your creativity.</p>
+          <p class="about-text">To get in touch and learn more, please visit our contact page. At Cuisine Tech Solutions, we value your success and are here to help you make a real difference in your business's menu.</p>
         </div>
         <div class="col-md-6">
-          <img src="path/to/your/image4.jpg" alt="About Us Image">
+          <img src="logo.png" alt="About Us Image">
         </div>
       </div>
     </div>
   </section>
+  
 
   <footer>
     <div class="container">
       <div class="row">
         <div class="col">
-          
-            <a href="https://www.facebook.com/your-page" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.twitter.com/your-page" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/your-page" target="_blank"><i class="fab fa-instagram"></i></a>
-          
+            <a href="https://www.twitter.com/cuisinetechs" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/cuisinetechsolutions" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/message/37NV7G5SOYW2H1" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <br>
+            <a href="mailto:cuisinetechsolutions@gmail.com" target="_blank">mail</i></a>
         </div>
       </div>
       <div class="row">
@@ -291,49 +271,68 @@
     </div>
   </footer>
   
-
- 
   <script>
-    var currentLanguage = 'TR'; // Initial language is Turkish
-
-  document.getElementById('languageButton').addEventListener('click', function() {
-    if (currentLanguage === 'TR') {
-      currentLanguage = 'ENG';
-      document.getElementById('languageButton').textContent = '🇬🇧'; // If the current language is Turkish, change it to English
-      document.getElementById('trFlag').style.display = 'none'; // Hide Turkish flag
-      document.getElementById('engFlag').style.display = 'inline-block';
-      document.getElementById('homeText').textContent = 'Welcome to Cuisine Tech Solutions!'; // Show English flag
-      // Add code to update the page content to English
-    } else {
-      currentLanguage = 'TR';
-      document.getElementById('languageButton').textContent = '🇹🇷';
-      // Code for changing content to Turkish // If the current language is English, change it to Turkish
-      document.getElementById('engFlag').style.display = 'none'; // Hide English flag
-      document.getElementById('trFlag').style.display = 'inline-block';
-      document.getElementById('homeText').textContent = 'Merhaba, Hoşgeldiniz!'; // Show Turkish flag
-      // Add code to update the page content to Turkish
-    }
-  });
-
-    function changeLanguage(language) {
-        
-      if (language === 'TR') {
-        document.getElementById('currentLanguage').textContent = 'TR';
-        // Add your code to switch the website content to Turkish
-        // For example, you can update text content using the following code:
-        document.getElementById('homeText').textContent = 'Merhaba, Hoşgeldiniz!';
-        document.getElementById('aboutText').textContent = 'Hakkımızda';
-        // Update other elements as needed
-      } else if (language === 'ENG') {
-        document.getElementById('currentLanguage').textContent = 'ENG';
-        // Add your code to switch the website content to English
-        // For example, you can update text content using the following code:
+    var currentLanguage = 'EN'; 
+  
+    document.getElementById('languageButton').addEventListener('click', function() {
+      if (currentLanguage === 'TR') {
+        currentLanguage = 'ENG';
+        document.getElementById('languageButton').textContent = '🇬🇧'; 
         document.getElementById('homeText').textContent = 'Welcome to Cuisine Tech Solutions!';
-        document.getElementById('aboutText').textContent = 'About Us';
-        // Update other elements as needed
+        document.getElementById('homeTextP').textContent = "We provide innovative solutions for your restaurant business, ensuring excellence at every step." ; // Show English flag
+        document.getElementById('services').textContent = 'Our Services';
+        document.getElementsByClassName('card-title')[0].textContent = 'Menu Creation';
+        document.getElementsByClassName('card-text')[0].textContent = 'We create customized menus for cafes, restaurants, and other food establishments, tailored to their specific needs and branding.';
+        document.getElementsByClassName('card-title')[2].textContent = 'Menu Statistics';
+        document.getElementsByClassName('card-text')[2].textContent = 'We provide menu statistic services to help you analyze the performance of your menus and make informed decisions.';
+        document.getElementsByClassName('card-title')[1].textContent = 'Menu Updates';
+        document.getElementsByClassName('card-text')[1].textContent = 'We offer ongoing menu update services, ensuring that your menus stay up-to-date with the latest offerings and prices.';
+        document.getElementsByClassName('about-heading')[0].textContent = 'About Us';
+        document.getElementsByClassName('about-text')[0].textContent = 'Cuisine Tech Solutions is an innovative company that provides online menu creation services for cafes, cafeterias, restaurants, and similar establishments. Our aim is to help businesses create creative, impressive, and user-friendly menus and provide their customers with an unforgettable dining experience.';
+        document.getElementsByClassName('about-text')[1].textContent = 'We understand the importance of digitizing menus and merging them with modern technologies. That\'s why, at Cuisine Tech Solutions, we offer web-based menu creation solutions, utilizing the latest technological tools. Our user-friendly interface, which can be easily customized to fit your specific needs, allows you to create and edit menus with ease.';
+        document.getElementsByClassName('about-text')[2].textContent = 'Our vision is to empower our customers with innovative ways to manage and present their menus. By creating unique and original menus, we strive to help businesses express themselves uniquely and provide their customers with a memorable experience.';
+        document.getElementsByClassName('about-text')[3].textContent = 'At Cuisine Tech Solutions, customer satisfaction is our top priority. Our expert team works tirelessly to provide solutions tailored to the needs of your business. We provide guidance and support every step of the way, ensuring that you create menus exactly as you envision them.';
+        document.getElementsByClassName('about-text')[4].textContent = 'If you are a café, cafeteria, or restaurant owner, we are excited to work with you. Together, we can create a menu that grabs attention, tantalizes taste buds, and reflects your creativity.';
+        document.getElementsByClassName('about-text')[5].textContent = 'To get in touch and learn more, please visit our contact page. At Cuisine Tech Solutions we value your success and are here to help you make a real difference in your business\'s menu.';
+        document.getElementsByClassName('btn-primary')[0].textContent = 'Learn More';
+        document.getElementsByClassName('nav-link')[0].textContent = 'Home';
+        document.getElementsByClassName('nav-link')[1].textContent = 'Services';
+        document.getElementsByClassName('nav-link')[2].textContent = 'About Us';
+        document.getElementsByClassName('nav-link')[3].textContent = 'Contact';
+        document.getElementsByTagName('footer')[0].getElementsByTagName('p')[0].textContent = '© 2023 Cuisine Tech Solutions. All rights reserved.';
+
+      } else {
+        currentLanguage = 'TR';
+        document.getElementById('languageButton').textContent = '🇹🇷';
+        document.getElementById('homeText').textContent = "Cuisine Tech Solutions'a hoş geldiniz!";
+        document.getElementById('homeTextP').textContent = "Restoran işletmeniz için yenilikçi çözümler sunuyor, her adımda mükemmellik sağlıyoruz.";
+        document.getElementById('services').textContent = 'Hizmetlerimiz';
+        document.getElementsByClassName('card-title')[0].textContent = 'Menü Oluşturma';
+        document.getElementsByClassName('card-text')[0].textContent = 'Kafe, restoran ve diğer yiyecek işletmeleri için özelleştirilmiş menüler oluşturuyoruz. Menüler, işletmelerin özel ihtiyaçlarına ve markalamalarına uygun şekilde tasarlanmaktadır.';
+        document.getElementsByClassName('card-title')[2].textContent = 'Menü İstatistikleri';
+        document.getElementsByClassName('card-text')[2].textContent = 'Menülerinizin performansını analiz etmenize ve bilinçli kararlar almanıza yardımcı olmak için menü istatistik hizmetleri sunuyoruz.';
+        document.getElementsByClassName('card-title')[1].textContent = 'Menü Güncellemeleri';
+        document.getElementsByClassName('card-text')[1].textContent = 'En son teklifler ve fiyatlarla menülerinizin güncel kalmasını sağlayan sürekli menü güncelleme hizmetleri sunuyoruz.';
+        document.getElementsByClassName('about-heading')[0].textContent = 'Hakkımızda';
+        document.getElementsByClassName('about-text')[0].textContent = 'Cuisine Tech Solutions, kafe, kafeterya, restoran ve benzeri işletmeler için çevrimiçi menü oluşturma hizmetleri sunan yenilikçi bir şirkettir. Amacımız, işletmelere yaratıcı, etkileyici ve kullanıcı dostu menüler oluşturmalarında yardımcı olmak ve müşterilerine unutulmaz bir yemek deneyimi sunmaktır.';
+        document.getElementsByClassName('about-text')[1].textContent = 'Menülerin dijitalleştirilmesi ve modern teknolojilerle birleştirilmesinin önemini biliyoruz. Bu nedenle Cuisine Tech Solutions olarak, son teknolojik araçları kullanarak web tabanlı menü oluşturma çözümleri sunuyoruz. Özel ihtiyaçlarınıza uygun şekilde kolayca özelleştirilebilen kullanıcı dostu arayüzümüz, menülerinizi kolaylıkla oluşturmanıza ve düzenlemenize olanak sağlar.';
+        document.getElementsByClassName('about-text')[2].textContent = 'Vizyonumuz, müşterilerimize menülerini yönetme ve sunma konusunda yenilikçi yöntemler sunmaktır. Benzersiz ve orijinal menüler oluşturarak işletmelerin kendilerini benzersiz bir şekilde ifade etmelerine ve müşterilerine unutulmaz bir deneyim sunmalarına yardımcı olmayı hedefliyoruz.';
+        document.getElementsByClassName('about-text')[3].textContent = 'Cuisine Tech Solutions olarak, müşteri memnuniyeti en önemli önceliğimizdir. Uzman ekibimiz, işletmenizin ihtiyaçlarına uygun çözümler sunmak için sürekli olarak çalışmaktadır. Yaratmak istediğiniz gibi tam olarak menüler oluşturmanızı sağlamak için adım adım rehberlik ve destek sağlıyoruz.';
+        document.getElementsByClassName('about-text')[4].textContent = 'Kafe, kafeterya veya restoran sahibiyseniz, sizinle çalışmaktan heyecan duyuyoruz. Birlikte dikkat çeken, damakları tatlandıran ve yaratıcılığınızı yansıtan bir menü oluşturabiliriz.';
+        document.getElementsByClassName('about-text')[5].textContent = 'İletişim kurmak ve daha fazla bilgi edinmek için lütfen iletişim sayfamızı ziyaret edin. Cuisine Tech Solutions olarak, başarınıza değer veriyoruz ve işletmenizin menüsünde gerçek bir fark yaratmanıza yardımcı olmak için buradayız.';
+        document.getElementsByClassName('btn-primary')[0].textContent = 'Daha Fazla Bilgi Edin';
+        document.getElementsByClassName('nav-link')[0].textContent = 'Ana Sayfa';
+        document.getElementsByClassName('nav-link')[1].textContent = 'Hizmetlerimiz';
+        document.getElementsByClassName('nav-link')[2].textContent = 'Hakkımızda';
+        document.getElementsByClassName('nav-link')[3].textContent = 'İletişim';
+        document.getElementsByTagName('footer')[0].getElementsByTagName('p')[0].textContent = '© 2023 Cuisine Tech Solutions. Tüm hakları saklıdır.';
       }
-    }
-  </script>
+    });
+    </script>
+  </body>
+  </html>
+  
+ 
   
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
